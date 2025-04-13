@@ -15,8 +15,8 @@ export const TradingCard = ({ ref }: TradingCardProps) => {
         <div ref={ref}>
             <div className={`flex border-yellow-500 border-4 border-solid rounded-md min-h-[400px] min-w-[300px] ${gradientClassName(type)}`}>
                 <div className="flex border-white border-solid border-2 rounded-sm min-h-full min-w-full">
-                    <div className="m-2 h-min w-full flex gap-1 bg-zinc-200 rounded-md">
-                        <FontAwesomeIcon icon={icon} className={`${iconColor} p-1`} />
+                    <div className="m-2 p-2 h-min w-full flex gap-2 items-center bg-zinc-200 rounded-md">
+                        <FontAwesomeIcon icon={icon} className={iconColor} />
                         {name}
                     </div>
                 </div>
