@@ -4,3 +4,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* 
+  Workaround for unintended text padding when downloading the card
+  See https://github.com/niklasvh/html2canvas/issues/2829#issuecomment-1043819034
+*/
+img {
+  display: initial !important;
+}
