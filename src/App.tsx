@@ -1,18 +1,12 @@
-import { useState } from 'react';
 import { CardControls } from './components/card-controls'
 import { CardView } from './components/card-view';
-import { NameContext } from './contexts/name';
 
 function App() {
-  const [name, setName] = useState("");
-
   return (
     <div className="flex justify-center items-center w-screen h-screen">
       <div className="flex gap-2">
-        <NameContext value={{ name, setName }}>
-          <CardControls />
-          <CardView />
-        </NameContext>
+        <CardControls />
+        <CardView />
       </div>
     </div>
   )
