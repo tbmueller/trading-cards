@@ -12,7 +12,7 @@ export const CardControls = () => {
         </div>
         <div className="flex flex-col gap-1">
             <label>Type</label>
-            <TypeDropdown className="w-full" />
+            <TypeDropdown className="w-full px-1 my-1" />
         </div>
     </Card>
 };

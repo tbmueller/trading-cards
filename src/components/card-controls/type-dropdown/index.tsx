@@ -16,12 +16,12 @@ export const TypeDropdown = ({ className }: { className?: string }) => {
   }), []);
 
   return (
-    <DropdownMenu>
+    <DropdownMenu className="px-1">
       <DropdownMenuTrigger className={className}>{options[type]}</DropdownMenuTrigger>
       <DropdownMenuContent className="w-full">
         {Object.keys(CARD_STYLES).map((typeKey: string) => (
-          <div key={typeKey} className="w-full" onClick={() => setType(typeKey as CardType)}>
-            <DropdownMenuItem className="w-full">{options[typeKey as CardType]}</DropdownMenuItem>
+          <div key={typeKey} onClick={() => setType(typeKey as CardType)}>
+            <DropdownMenuItem className="rounded-md">{options[typeKey as CardType]}</DropdownMenuItem>
           </div>
         ))}
       </DropdownMenuContent>
