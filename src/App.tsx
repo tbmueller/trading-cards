@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CardControls } from './components/card-controls'
-import { TradingCard } from './components/trading-card';
+import { CardView } from './components/card-view';
 import { NameContext } from './contexts/name';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="flex gap-2">
         <NameContext value={{ name, setName }}>
           <CardControls />
-          <TradingCard />
+          <CardView />
         </NameContext>
       </div>
     </div>
