@@ -2,13 +2,14 @@
 import '@react95/core/GlobalStyle';
 import '@react95/core/themes/win95.css';
 import { CardControls } from './components/card-controls'
-import { Flex } from 'react-flex-lite';
+import { Card } from './components/card';
 
 function App() {
   return (
-    <Flex hcenter vcenter w="100vw">
+    <>
       <CardControls />
-    </Flex>
+      <Card/>
+    </>
   )
 }
 
