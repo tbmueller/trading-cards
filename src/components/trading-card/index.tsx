@@ -1,15 +1,14 @@
-import { NameContext } from "../../contexts/name";
-import { useContext } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { gradientClassName } from "../../util/radial-gradient-classname";
 import { CARD_STYLES } from "./card-styles";
+import { useStore } from "../../store/hooks";
 
 interface TradingCardProps {
     ref: React.RefObject<HTMLDivElement | null>;
 }
 
 export const TradingCard = ({ ref }: TradingCardProps) => {
-    const { name } = useContext(NameContext);
+    const { name } = useStore();
     const type = "fire";
     const { icon, iconColor } = CARD_STYLES[type];
     return (

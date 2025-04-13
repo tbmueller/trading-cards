@@ -1,8 +1,7 @@
 import { Card, Input } from "pixel-retroui";
-import { NameContext } from "../../contexts/name";
-import { useContext } from "react";
+import { useStore } from "../../store/hooks";
 export const CardControls = () => {
-    const { name, setName } = useContext(NameContext);
+    const { name, setName } = useStore();
     if (!setName) return null;
 
     return <Card className="flex flex-col gap-2">
