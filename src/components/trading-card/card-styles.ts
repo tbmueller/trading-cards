@@ -20,7 +20,7 @@ export const CARD_STYLES: Record<CardType, CardStyle<CardType>> = {
   },
   flying: {
     icon: faFeather,
-    iconColor: "text-blue-500",
-    bgGradientColors: ["blue-500", "blue-200"],
+    iconColor: "text-sky-400",
+    bgGradientColors: ["sky-400", "sky-100"],
   },
 };
