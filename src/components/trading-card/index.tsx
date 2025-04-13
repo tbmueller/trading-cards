@@ -1,5 +1,7 @@
 export const Card = () => {
-    return (<div style={{borderRadius: "5px", border: "1px solid yellow"}}>
+    return (
+        <div className="border-5 border-yellow-500 rounded-md">
             hello
-        </div>)
+        </div>
+    );
 };
